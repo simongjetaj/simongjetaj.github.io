@@ -1,5 +1,4 @@
-/* HOME SECTION*/
-
+/* HOME SECTION */
 body {
   margin: 0;
   font-family: 'Dosis', sans-serif;
@@ -22,6 +21,7 @@ nav ul a:hover {
   background: #fff;
   color: rgba(0, 0, 0, 0.8);
   border-radius: 0.2rem;
+  transition: all 0.27s ease-out;
 }
 
 nav ul li:nth-child(4) {
@@ -54,6 +54,11 @@ header {
   margin: 0 auto;
 }
 
+.avatar:hover {
+  border: 0.1rem solid #fff;
+  transition: border 0.5s ease-in;
+}
+
 .simon h1, h2 {
   text-align: center;
   color: #fff;
@@ -62,7 +67,7 @@ header {
 }
 
 .simon h1 {
-  font-family: 'Autour One', cursive;
+  font-family: 'Ubuntu', sans-serif;
   letter-spacing: 0.1rem;
   word-spacing: 0.35rem;
   text-shadow: 0.4px 0.4px 1px #000;
@@ -116,7 +121,8 @@ header h1.typing a {
 
 #about h3, #work h3, #contact h3 {
   text-align: center;
-  font-family: 'Autour One', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.01rem;
   word-spacing: 0.5rem;
   margin-top: 2.5rem;
   text-transform: uppercase;
@@ -279,7 +285,7 @@ hr {
   text-align: center;
 }
 
-/* Contact Me Section */
+/* CONTACT SECTION */
 #contact {
   background: #212121 url("../images/contact.jpg") center center no-repeat / cover;
   min-height: 58vh;

@@ -51,6 +51,6 @@ var TxtType = function(el, toRotate, period) {
 
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #3E2723; text-shadow: 0.15px 0.15px 1px #fff; }";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.1rem solid #3E2723; padding-right: 0.4rem; text-shadow: 0.15px 0.07px 1.5px #fff; }";
         document.body.appendChild(css);
     };
