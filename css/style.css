@@ -308,11 +308,11 @@ hr {
 }
 
 #contact img {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 1rem;
   position: relative;
-  top: 0.7rem;
+  top: 0.85rem;
   animation: pulse 1s infinite;
 }
 
@@ -369,6 +369,12 @@ footer a i:hover {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 1600px) {
+  html {
+    font-size: 29px;
+  }
+}
+
 @media (max-width: 1074px) {
   #skills img {
     height: 5rem;
