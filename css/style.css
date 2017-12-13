@@ -242,6 +242,7 @@ hr {
 #work {
   margin-top: 2.5rem;
   background: #E0E0E0 url("../images/coding.jpg") center center no-repeat fixed / cover;
+  padding-bottom: 1rem;
 }
 
 #work h3 {
