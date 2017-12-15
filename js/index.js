@@ -59,7 +59,7 @@ var TxtType = function(el, toRotate, period) {
     // Smooth Scrolling
     (function (window, undefined) {
         'use strict';
-        var height_fixed_header = 82,
+        var height_fixed_header = 0,
             speed = 650,
             moving_frequency = 15,
             links = document.getElementsByTagName('a'),
