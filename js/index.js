@@ -110,3 +110,7 @@ var TxtType = function(el, toRotate, period) {
             return window.pageYOffset !== undefined ? window.pageYOffset : document.documentElement.scrollTop !== undefined ? document.documentElement.scrollTop : document.body.scrollTop;
         };
     })(window);
+
+const year = document.getElementById('year');
+const currentYear = (new Date().getFullYear());
+(currentYear === 2017) ? year.textContent = '2017' : year.textContent = `2017-${currentYear}`;
