@@ -28,7 +28,7 @@ nav ul li:nth-child(4) {
   margin-right: 2.5rem;
 }
 
-nav ul li a {
+nav ul li a, .simon h2 a {
   text-decoration: none;
   color: #fff;
 }
