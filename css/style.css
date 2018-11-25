@@ -109,13 +109,13 @@ header h1.typing a {
   margin-top: 1.75rem;
 }
 
-.socials .fa {
+.socials i {
   margin: 0.7rem;
   color: rgba(1, 1, 1, 0.9);
   font-size: 1.1rem;
 }
 
-.socials .fa:hover, #work .fa:hover {
+.socials i:hover, #work i:hover {
   color: #000;
   transform: scale(1.3);
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
@@ -159,9 +159,9 @@ header h1.typing a {
   font-style: italic;
 }
 
-#skills img {
-  height: 4rem;
-  margin: 0 1rem 1rem 0;
+#skills i {
+  font-size: 3.5rem;
+  margin: 0 1rem 3rem 0;
 }
 
 hr {
@@ -291,7 +291,7 @@ hr {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#work .fa {
+#work i {
   font-size: 1.2rem;
   color: #000;
   margin: 0.3rem;
@@ -316,6 +316,7 @@ hr {
 
 #contact p.center {
   text-align: center;
+  font-size: 1.1rem;
   margin-top: -1rem;
 }
 
@@ -323,12 +324,11 @@ hr {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1));
 }
 
-#contact img {
-  width: 2.5rem;
-  height: 2.5rem;
+#contact i {
+  font-size: 2.5rem;
   margin-right: 1rem;
   position: relative;
-  top: 0.85rem;
+  top: 0.72rem;
   animation: pulse 1s infinite;
 }
 
@@ -392,10 +392,6 @@ footer a i:hover {
 }
 
 @media (max-width: 1074px) {
-  #skills img {
-    height: 5rem;
-  }
-  
   #work img {
     width: 11.5rem;
     height: 11.5rem;
@@ -412,10 +408,6 @@ footer a i:hover {
 @media (max-width: 880px) {
   #me img {
     max-width: 24rem;
-  }
-  
-  #skills img {
-    height: 3.5rem;
   }
   
   p {
@@ -440,11 +432,6 @@ footer a i:hover {
 @media (max-width: 674px) {
   #about-me, #me {
     max-width: 100%;
-  }
-  
-  #skills img {
-    height: 4.2rem;
-    margin: 0 2.5rem 2rem 0;
   }
   
   .center {
@@ -485,17 +472,16 @@ footer a i:hover {
     font-size: 1.2rem;
   }
   
-  #skills img {
-    height: 4rem;
-    margin: 0 1rem 2rem 0;
+  #skills i {
+    font-size: 2.8rem;
   }
-  
+
   #work img {
     width: 7rem;
     height: 7rem;
   }
   
-  #work .fa {
+  #work i {
     font-size: 1.05rem;
     margin: 0.2rem;
   }
@@ -519,10 +505,6 @@ footer a i:hover {
     font-size: 1rem;
   }
   
-  #skills img {
-    height: 3rem;
-  }
-  
   #work .portfolio {
     width: 100%;
   }
@@ -538,11 +520,6 @@ footer a i:hover {
 }
 
 @media (max-width: 333px) {
-  #skills img {
-    margin: 0 0.5rem 1rem 0;
-    height: 2.5rem;
-  }
-  
   nav ul li {
     margin: 1rem 0.5rem 0 0;
   }
@@ -573,13 +550,12 @@ footer a i:hover {
     height: 10rem;
   }
   
-  #work .fa {
+  #work i {
     font-size: 1rem;
     margin: 0;
   }
   
-  #contact img {
-    width: 1.5rem;
-    height: 1.5rem;
+  #contact i {
+    font-size: 1.5rem;
   }
 }
