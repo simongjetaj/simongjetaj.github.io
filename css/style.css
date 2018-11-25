@@ -489,6 +489,15 @@ footer a i:hover {
   #work figcaption div {
      text-align: left;
   }
+
+  #contact p.center {
+    font-size: 1rem;
+  }
+
+  #contact i {
+    font-size: 2rem;
+    top: 0.55rem;
+  }
 }
 
 
