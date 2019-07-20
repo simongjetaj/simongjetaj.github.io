@@ -152,7 +152,7 @@ header h1.typing a {
   max-width: 48.5%;
   float: left;
   font-size: 1.08rem;
-  padding: 2rem;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
@@ -578,7 +578,11 @@ footer a i:hover {
   }
 }
 
-@media (max-width: 333px) {
+@media (max-width: 377px) {
+  html {
+    font-size: 1.15rem;
+  }
+
   nav ul li {
     margin: 1rem 0.5rem 0 0;
   }
