@@ -119,6 +119,8 @@ header .typing a {
   text-decoration: none;
   cursor: text;
   word-spacing: 0.35rem;
+  text-align: center;
+  display: block;
 }
 
 .simon h2 {
