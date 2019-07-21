@@ -55,18 +55,25 @@ header {
     cover;
   min-height: 100vh;
   position: relative;
-  animation: bgAnimation 7s linear infinite;
+  animation: bgVertical 7.5s linear 1;
 }
 
-@keyframes bgAnimation {
-  0% {
+@keyframes bgVertical {
+  from {
     background-position: 0 0;
   }
-  50% {
-    background-position: 0 -25px;
+
+  to {
+    background-position: 0 -75px;
   }
-  100% {
+}
+
+@keyframes bgHorizontal {
+  from {
     background-position: 0 0;
+  }
+  to {
+    background-position: -75px 0;
   }
 }
 
@@ -130,7 +137,7 @@ header .typing a {
 }
 
 .socials {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 15px/45px;
   text-align: center;
   margin-top: 1.75rem;
@@ -197,6 +204,7 @@ header .typing a {
   display: block;
   margin-top: 1rem;
   font-style: italic;
+  text-align: center;
 }
 
 #skills i {
@@ -487,8 +495,17 @@ footer a i:hover {
     width: 6rem;
   }
 
+  .simon .name {
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+
   #skills i {
     font-size: 2rem;
+  }
+
+  header {
+    animation: bgHorizontal 14s linear infinite;
   }
 }
 
@@ -500,6 +517,14 @@ footer a i:hover {
 
   .center {
     text-align: center;
+  }
+
+  .socials i {
+    color: #fff;
+  }
+
+  .socials {
+    background: rgba(0, 0, 0, 0.3);
   }
 
   #me {
@@ -531,7 +556,6 @@ footer a i:hover {
 @media (max-width: 532px) {
   .simon .name {
     font-size: 1.55rem;
-    text-transform: capitalize;
   }
 
   header h1.typing a {
