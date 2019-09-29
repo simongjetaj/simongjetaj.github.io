@@ -1,5 +1,5 @@
 // Typewriter
-var TxtType = function(el, toRotate, period) {
+var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -9,7 +9,7 @@ var TxtType = function(el, toRotate, period) {
     this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function() {
+TxtType.prototype.tick = function () {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
 
@@ -37,12 +37,12 @@ TxtType.prototype.tick = function() {
         delta = 500;
     }
 
-    setTimeout(function() {
+    setTimeout(function () {
         that.tick();
     }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
     var elements = document.getElementsByClassName('typewrite');
     for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -58,6 +58,15 @@ window.onload = function() {
         '.typewrite > .wrap { border-right: 0.1rem solid #fff; padding-right: 0.4rem; text-shadow: 1px 2px 1.5px #000; }';
     document.body.appendChild(css);
 };
+
+// Slider
+$('.skills-slider').slick({
+    speed: 750,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    infinite: false,
+    easing: 'ease-out',
+});
 
 // Smooth Scrolling
 const anchorLinks = ['header', 'about', 'work', 'contact'];
@@ -88,11 +97,13 @@ window.addEventListener('scroll', e => {
         navbarLinks.forEach(a => {
             a.classList.remove('a_scroll');
         });
+        navbar.classList.remove('navbar-bg');
     }
-    if (window.scrollY >= header.clientHeight) {
+    if (window.scrollY >= header.clientHeight - 20) {
         navbarLinks.forEach(a => {
             a.classList.add('a_scroll');
         });
+        navbar.classList.add('navbar-bg');
     }
 });
 
