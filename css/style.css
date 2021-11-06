@@ -206,7 +206,7 @@ header .typing a {
   font-family: 'Ubuntu', sans-serif;
   letter-spacing: 0.01rem;
   word-spacing: 0.5rem;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   text-transform: uppercase;
 }
 
@@ -280,15 +280,14 @@ hr {
 
 /* WORK SECTION */
 #work {
-  margin-top: 2.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   position: relative;
 }
 
 #work::after {
   content: '';
   background: #e0e0e0 url('../images/laptop.jpeg') no-repeat center / cover;
-  opacity: 0.4;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -298,8 +297,7 @@ hr {
 }
 
 #work h3 {
-  text-indent: -0.5em;
-  padding-top: 2.5rem;
+  padding-top: 3rem;
 }
 
 #work .portfolio {
@@ -342,11 +340,14 @@ hr {
 
 /* CONTACT SECTION */
 #contact {
-  background: #212121 url('../images/contact.jpg') no-repeat center / cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../images/contact.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   min-height: 58vh;
   color: #fff;
   box-shadow: 0 0 60px 15px #000;
-  margin-top: -2.5rem;
+  margin-top: -3rem;
 }
 
 #contact h3 {
@@ -369,16 +370,22 @@ hr {
 }
 
 #contact i {
-  font-size: 2.5rem;
-  margin-right: 1rem;
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
   position: relative;
-  top: 0.72rem;
+  top: 0.4rem;
   animation: pulse 1s infinite;
 }
 
 #contact span a {
   color: #fff;
   text-decoration: none;
+  font-size: 0.9rem;
+}
+
+#contact .options {
+  display: flex;
+  justify-content: space-between;
 }
 
 @keyframes pulse {
@@ -396,23 +403,26 @@ hr {
 }
 
 /* FOOTER */
+footer {
+  color: #fff;
+  background-color: #000;
+}
+
 footer p.center {
   text-align: center;
-  color: #000;
+  font-size: 1rem;
+  margin: 0;
+  padding: 2rem 0;
 }
 
 footer a i {
   float: right;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   border-radius: 50%;
   padding: 0.25rem;
   animation: slideUp 1.5s infinite;
-}
-
-footer a i:hover {
-  color: #000;
-  background: #fff;
+  margin-right: 1.5rem;
 }
 
 @keyframes slideUp {
