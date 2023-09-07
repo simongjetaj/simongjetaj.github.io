@@ -53,7 +53,6 @@ window.onload = function () {
     }
 
     var css = document.createElement('style');
-    css.type = 'text/css';
     css.innerHTML =
         '.typewrite > .wrap { border-right: 0.1rem solid #fff; padding-right: 0.4rem; text-shadow: 1px 2px 1.5px #000; }';
     document.body.appendChild(css);
@@ -69,17 +68,17 @@ $('.skills-slider').slick({
 });
 
 // Smooth Scrolling
-const anchorLinks = ['header', 'about', 'work', 'contact'];
-const anchors = document.querySelectorAll('#navbar a');
+const anchorLinks = ['header', 'about', 'work', 'contact', 'footer'];
+const anchors = document.querySelectorAll('.navigate');
 
 anchors.forEach((anchor, i) => {
     anchor.addEventListener('click', function scrollToDiv(e) {
         e.preventDefault();
 
         const ref = document.getElementById(anchorLinks[i]);
-        
+
         window.scroll({
-            top: ref.offsetTop,
+            top: anchorLinks[i] === 'footer' ? 0 : ref.offsetTop,
             left: 0,
             behavior: 'smooth'
         });
